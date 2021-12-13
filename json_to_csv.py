@@ -84,6 +84,6 @@ if __name__ == '__main__':
     ap.add_argument('-f','--filepath', required=True, help='path to dir with json')
     args = vars(ap.parse_args())
 
-    df = load_data(args('filepath'))
+    df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list))
     df.to_csv('Amention_data.csv')
