@@ -35,8 +35,10 @@ def get_mentionee(mention_info):
 def get_category(string, media_list):
     if string in media_list:
         return "Media"
+    elif string in diplomat_list:
+        return "Diplomat"
     else:
-        return "Not media"
+        return "Neither"
 
 def convert_to_df(data):
     """Converts a ndjson-file to a pd.DataFrame
