@@ -48,8 +48,6 @@ def convert_to_df(data):
         pd.DataFrame: Dataframe containing the necessary information.
     """    
 
-    text = [row["text"] for row in data]
-
     dataframe = {
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
         "mentionee": [get_mentionee(row['entities'].get('mentions')) for row in data]
