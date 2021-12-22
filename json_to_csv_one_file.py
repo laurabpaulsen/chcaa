@@ -67,7 +67,7 @@ def load_data(data_path):
         pd.DataFrame: Dataframe of the files.
     """    
 
-    with open('data.ndjson', 'r') as f:
+    with open(data_path, 'r') as f:
         data = ndjson.load(f)
     
     return convert_to_df(data)
