@@ -17,7 +17,7 @@ import io
 
 
 media_list = ["ouzhounews", "shen_shiwei", "CGTNOfficial", "XHNews", "ChinaDaily", "chenweihua", "CNS1952", "PDChina", "PDChinese", "globaltimesnews", "HuXijin_GT", "XinWen_Ch", "QiushiJournal"]
-diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','CGTNOfficial','chenweihua','ChinaAmbUN','chinacgedi','ChinaConsulate','ChinaDaily', 'ChinaEmbassyUSA''ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'CNS1952', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','globaltimesnews','HuXijin_GT','MFA_China','ouzhounews','PDChina','PDChinese','QiushiJournal','shen_shiwei', 'SpokespersonCHN', 'spokespersonHZM','XHNews', 'XinWen_Ch','zlj517']
+diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','CGTNOfficial','chenweihua','ChinaAmbUN','chinacgedi', 'ChinaConsulate','ChinaDaily', 'ChinaEmbassyUSA''ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'CNS1952', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','globaltimesnews','HuXijin_GT','MFA_China','ouzhounews','PDChina','PDChinese','QiushiJournal','shen_shiwei', 'SpokespersonCHN', 'spokespersonHZM','XHNews', 'XinWen_Ch','zlj517', 'AmbCina', ]
 
 def get_mentionee(mention_info):
     ''' Extracts urls from tweets
@@ -32,7 +32,7 @@ def get_mentionee(mention_info):
 
 
 
-def get_category(string, media_list):
+def get_category(string, media_list, diplomat_list):
     if string in media_list:
         return "Media"
     elif string in diplomat_list:
@@ -52,7 +52,8 @@ def convert_to_df(data):
 
     dataframe = {
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
-        "mentionee": [get_mentionee(row['entities'].get('mentions')) if row.get("entities") else '' for row in data]
+        "mentionee": [get_mentionee(row['entities'].get('mentions')) if row.get("entities") else '' for row in data],
+        "text": [row["text"] for row in data]
         }
     return pd.DataFrame(dataframe)
 
@@ -79,4 +80,6 @@ if __name__ == '__main__':
 
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list))
-    df.to_csv('mentiondata/%s.csv' % args['filepath'].split("/")[-1])
+    df.to_csv('mentiondata/%s.csv' % args['filepath'].split("/")[-1].split(".")[0])
+
+
