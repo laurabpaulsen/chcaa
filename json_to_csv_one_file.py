@@ -53,7 +53,7 @@ def convert_to_df(data):
     dataframe = {
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
         "mentionee": [get_mentionee(row['entities'].get('mentions')) if row.get("entities") else '' for row in data],
-        "text": [row["text"] for row in data]
+        "text": [row["text"].encode('utf8') for row in data]
         }
     return pd.DataFrame(dataframe)
 
