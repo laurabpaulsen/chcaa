@@ -20,17 +20,26 @@ media_list = ["ouzhounews", "shen_shiwei", "CGTNOfficial", "XHNews", "ChinaDaily
 diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','CGTNOfficial','chenweihua','ChinaAmbUN','chinacgedi', 'ChinaConsulate','ChinaDaily', 'ChinaEmbassyUSA','ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'CNS1952', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','globaltimesnews','HuXijin_GT','MFA_China','ouzhounews','PDChina','PDChinese','QiushiJournal','shen_shiwei', 'SpokespersonCHN', 'spokespersonHZM','XHNews', 'XinWen_Ch','zlj517', 'AmbCina']
 
 def get_mentionee(mention_info):
-    ''' Extracts urls from tweets
+    ''' Extracts mention info from tweets
     Args: 
-        Media info from tweet object (list of dicts or 0)
+        Mention info from tweet object (list of dicts or 0)
     Returns:
-        Urls if there is some
+        mentions if they are included in the diplomat list
     '''
     if not mention_info:
         return ''
     return ",".join(info['username'] for info in mention_info if info['username'] in diplomat_list)
 
-
+def get_mentionee1(mention_info):
+    ''' Extracts mention info from retweets
+    Args: 
+        Mention info from tweet object (list of dicts or 0)
+    Returns:
+        mentions if they are included in the diplomat list
+    '''
+    if not mention_info:
+        return ''
+    return ",".join(info for info in mention_info if info in diplomat_list)
 
 def get_category(string, media_list, diplomat_list):
     if string in media_list:
@@ -52,7 +61,7 @@ def convert_to_df(data):
     
     dataframe = {
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
-        "mentionee": [get_mentionee(row['entities'].get('mentions')) for row in data],
+        "mentionee": [get_mentionee1([tweet['username']) for tweet in  [tweet['entities']['mentions'] for tweet in row.get('includes')['tweets']][0]] if row["text"].encode("utf-8").startswith("RT @") else get_mentionee(row['entities'].get('mentions')) for row in data],
         "text": [[row['text'] for row in row.get('includes')['tweets']][0] if row["text"].encode("utf-8").startswith("RT @") else row["text"].encode("utf-8") for row in data],
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data]
         }
