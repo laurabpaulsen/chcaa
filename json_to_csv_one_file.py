@@ -61,7 +61,7 @@ def convert_to_df(data):
     
     dataframe = {
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
-        "mentionee": [get_mentionee1([row['username']) for row in  [row['entities']['mentions'] for row in row.get('includes')['tweets']][0]] if row["text"].encode("utf-8").startswith("RT @") else get_mentionee(row['entities'].get('mentions')) for row in data],
+        "mentionee": [get_mentionee([tweet['username'] for tweet in  [tweet['entities']['mentions'] for tweet in row.get('includes')['tweets']][0]]) if row["text"].startswith("RT @") else get_mentionee(row['entities'].get('mentions')) for row in data],
         "text": [[row['text'] for row in row.get('includes')['tweets']][0] if row["text"].encode("utf-8").startswith("RT @") else row["text"].encode("utf-8") for row in data],
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data]
         }
