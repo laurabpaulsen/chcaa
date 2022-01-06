@@ -42,9 +42,10 @@ def get_mentionee1(tweet_data):
     if tweet_data.get('includes')['tweets'][0]:
         tweetinfo = tweet_data.get('includes')['tweets'][0]
     
-    if tweetinfo.get('entities').get('mentions'):
-        fullmentioninfo = tweetinfo['entities']['mentions']
-        list_of_mentions = [tweet['username'] for tweet in fullmentioninfo]
+    if tweetinfo.get('entities'):
+        if tweetinfo.get('entities').get('mentions'):
+            fullmentioninfo = tweetinfo['entities']['mentions']
+            list_of_mentions = [tweet['username'] for tweet in fullmentioninfo]
     
     if not list_of_mentions:
         return ''
