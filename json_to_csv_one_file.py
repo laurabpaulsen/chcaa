@@ -37,10 +37,13 @@ def get_mentionee1(tweet_data):
     Returns:
         Urls if there is some
     '''
-    list_of_mentions = []
-    list_of_mentions = [tweet_data.get('entities').get('mentions') for tweet in tweet_data.get('includes')['tweets']][0]
-    if list_of_mentions is None:
+    tweetinfo = tweet_data.get('includes')['tweets'][0]
+    fullmentioninfo = tweetinfo['entities']['mentions']
+    list_of_mentions = [tweet['username'] for tweet in fullmentioninfo]
+    
+    if not list_of_mentions:
         return ''
+    
     mention_info = [tweet['username'] for tweet in list_of_mentions]
     return ",".join(info for info in mention_info if info in diplomat_list)
 
