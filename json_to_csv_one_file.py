@@ -45,8 +45,6 @@ def get_mentionee1(tweet_data):
     
     if not list_of_mentions:
         return ''
-    
-    mention_info = [tweet['username'] for tweet in list_of_mentions]
     return ",".join(info for info in list_of_mentions if info in diplomat_list)
 
 def get_category(string, media_list, diplomat_list):
