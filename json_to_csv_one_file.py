@@ -30,13 +30,16 @@ def get_mentionee(mention_info):
         return ''
     return ",".join(info['username'] for info in mention_info if info['username'] in diplomat_list)
 
-def get_mentionee1(mention_info):
-    ''' Extracts mention info from retweets
+def get_mentionee1(tweet_data):
+    ''' Extracts urls from tweets
     Args: 
-        Mention info from tweet object (list of dicts or 0)
+        Media info from tweet object (list of dicts or 0)
     Returns:
-        mentions if they are included in the diplomat list
+        Urls if there is some
     '''
+    list_of_mentions = [tweet_data['entities']['mentions'] for tweet in tweet_data.get('includes')['tweets']][0]
+    mention_info = [tweet['username'] for tweet in list_of_mentions]
+
     if not mention_info:
         return ''
     return ",".join(info for info in mention_info if info in diplomat_list)
@@ -61,7 +64,7 @@ def convert_to_df(data):
     
     dataframe = {
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
-        "mentionee": [get_mentionee1([tweet['username'] for tweet in [tweet['entities']['mentions'] for tweet in row.get('includes')['tweets']][0]]) if row["text"].startswith("RT @") else get_mentionee(row['entities'].get('mentions')) for row in data],
+        "mentionee": [get_mentionee1(row) if row["text"].encode("utf-8").startswith("RT @") else get_mentionee(row['entities'].get('mentions')) for row in data],
         "text": [[row['text'] for row in row.get('includes')['tweets']][0] if row["text"].encode("utf-8").startswith("RT @") else row["text"].encode("utf-8") for row in data],
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data]
         }
