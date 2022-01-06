@@ -97,8 +97,8 @@ if __name__ == '__main__':
     ap.add_argument('-f','--filepath', required=True, help='path to dir with json')
     args = vars(ap.parse_args())
     handle = args['filepath'].split('mention_')[-1].split('_')[0]
-    df['mentionee' == ''] = handle
 
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
+    df['mentionee' == ''] = handle
     df.to_csv('mentiondata/%s.csv' % args['filepath'].split("/")[-1], encoding =  "utf-8")
