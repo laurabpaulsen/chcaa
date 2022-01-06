@@ -38,8 +38,9 @@ def get_mentionee1(tweet_data):
         Urls if there is some
     '''
     tweetinfo = tweet_data.get('includes')['tweets'][0]
-    fullmentioninfo = tweetinfo['entities']['mentions']
-    list_of_mentions = [tweet['username'] for tweet in fullmentioninfo]
+    if tweetinfo.get('entities').get('mentions'):
+        fullmentioninfo = tweetinfo['entities']['mentions']
+        list_of_mentions = [tweet['username'] for tweet in fullmentioninfo]
     
     if not list_of_mentions:
         return ''
