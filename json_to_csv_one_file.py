@@ -38,11 +38,11 @@ def get_mentionee1(tweet_data):
         Urls if there is some
     '''
     list_of_mentions = [tweet_data.get('entities').get('mentions') for tweet in tweet_data.get('includes')['tweets']][0]
-    mention_info = [tweet['username'] for tweet in list_of_mentions if list_of_mentions is not None]
-
     if not mention_info:
         return ''
-    return ",".join(info for info in mention_info if info in diplomat_list)
+    else:
+    mention_info = [tweet['username'] for tweet in list_of_mentions]
+        return ",".join(info for info in mention_info if info in diplomat_list)
 
 def get_category(string, media_list, diplomat_list):
     if string in media_list:
