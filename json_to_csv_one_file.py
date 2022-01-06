@@ -38,7 +38,7 @@ def get_mentionee1(tweet_data):
         Urls if there is some
     '''
     list_of_mentions = [tweet_data.get('entities').get('mentions') for tweet in tweet_data.get('includes')['tweets']][0]
-    mention_info = [tweet['username'] for tweet in list_of_mentions if tweet['username'] is not None]
+    mention_info = [tweet['username'] for tweet in list_of_mentions if list_of_mentions is not None]
 
     if not mention_info:
         return ''
