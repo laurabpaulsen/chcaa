@@ -37,6 +37,7 @@ def get_mentionee1(tweet_data):
     Returns:
         Urls if there is some
     '''
+    list_of_mentions = []
     list_of_mentions = [tweet_data.get('entities').get('mentions') for tweet in tweet_data.get('includes')['tweets']][0]
     if len(list_of_mentions) == 0:
         return ''
