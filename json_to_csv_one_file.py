@@ -40,6 +40,7 @@ def get_mentionee1(tweet_data):
     '''
     list_of_mentions = []
     tweetinfo = tweet_data.get('includes')['tweets'][0]
+    
     if tweetinfo.get('entities').get('mentions'):
         fullmentioninfo = tweetinfo['entities']['mentions']
         list_of_mentions = [tweet['username'] for tweet in fullmentioninfo]
@@ -100,5 +101,5 @@ if __name__ == '__main__':
 
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
-    df['mentionee' == NA] = handle
+    df = df['mentionee'].replace('', handle)
     df.to_csv('mentiondata/%s.csv' % args['filepath'].split("/")[-1], encoding =  "utf-8")
