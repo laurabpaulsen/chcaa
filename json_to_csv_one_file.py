@@ -45,7 +45,7 @@ def get_mentionee1(tweet_data):
         if tweetinfo.get('tweets'):
             tweetinfo = tweetinfo['tweets']
             if tweetinfo[0]:
-                tweetinfo = tweet_data['tweets'][0]
+                tweetinfo = tweet_data[0]
                 if tweetinfo.get('entities'):
                     tweetinfo = tweetinfo.get('entities')
                     if tweetinfo.get('mentions'):
