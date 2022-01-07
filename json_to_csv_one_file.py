@@ -61,6 +61,16 @@ def get_category(string, media_list, diplomat_list):
         return "Diplomat"
     else:
         return "Neither"
+    
+    
+def check(tweet_data):
+    if row["text"].encode("utf-8").startswith("RT @"):
+        if tweet_data.get('includes'):
+            tweetinfo = tweet_data.get('includes')
+            if tweetinfo.get('tweets'):
+                return True
+    else:
+        return False
 
 def convert_to_df(data):
     """Converts a ndjson-file to a pd.DataFrame
@@ -75,7 +85,7 @@ def convert_to_df(data):
     dataframe = {
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
         "mentionee": [get_mentionee1(row) if row["text"].encode("utf-8").startswith("RT @") else get_mentionee(row['entities'].get('mentions')) for row in data],
-        "text": [try [row['text'] for row in row.get('includes')['tweets']][0] if row["text"].encode("utf-8").startswith("RT @") else row["text"].encode("utf-8") for row in data],
+        "text": [[row['text'] for row in row.get('includes')['tweets']][0] if check(row) else row["text"].encode("utf-8") for row in data],
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data]
         }
     return pd.DataFrame(dataframe)
