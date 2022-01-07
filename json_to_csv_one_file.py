@@ -64,7 +64,7 @@ def get_category(string, media_list, diplomat_list):
     
     
 def check(tweet_data):
-    if row["text"].encode("utf-8").startswith("RT @"):
+    if tweet_data["text"].encode("utf-8").startswith("RT @"):
         if tweet_data.get('includes'):
             tweetinfo = tweet_data.get('includes')
             if tweetinfo.get('tweets'):
