@@ -83,6 +83,7 @@ def convert_to_df(data):
     """    
     
     dataframe = {
+        "tweetID": [row.get('id')for row in data]
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
         "mentionee": [get_mentionee1(row) if row["text"].encode("utf-8").startswith("RT @") else get_mentionee(row['entities'].get('mentions')) for row in data],
         "text": [[row['text'] for row in row.get('includes')['tweets']][0] if check(row) else row["text"].encode("utf-8") for row in data],
@@ -117,4 +118,4 @@ if __name__ == '__main__':
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['mentionee'] = df['mentionee'].replace('', handle)
-    df.to_csv('mentiondata/%s.csv' % handle)
+    df.to_csv('mentiondata/%s.csv' % handle, index = False)
