@@ -118,6 +118,12 @@ if __name__ == '__main__':
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['mentionee'] = df['mentionee'].replace('', handle)
-    df.assign(mentionee=df['mentionee'].str.split(',')).explode('mentionee')
+    lst_col = 'mentionee' 
+    x = df.assign(**{lst_col:df[lst_col].str.split(',')})
+    df = pd.DataFrame({
+        col:np.repeat(x[col].values, x[lst_col].str.len())
+        for col in x.columns.difference([lst_col])
+    }).assign(**{lst_col:np.concatenate(x[lst_col].values)}
+
 
     df.to_csv('mentiondata/%s.csv' % handle, index = False, encoding =  "utf-8")
