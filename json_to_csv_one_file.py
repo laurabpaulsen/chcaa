@@ -123,7 +123,5 @@ if __name__ == '__main__':
     df = pd.DataFrame({
         col:np.repeat(x[col].values, x[lst_col].str.len())
         for col in x.columns.difference([lst_col])
-    }).assign(**{lst_col:np.concatenate(x[lst_col].values)}
-
-
+    }).assign(**{lst_col:np.concatenate(x[lst_col].values)})[x.columns.tolist()]
     df.to_csv('mentiondata/%s.csv' % handle, index = False, encoding =  "utf-8")
