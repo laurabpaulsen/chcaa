@@ -118,4 +118,4 @@ if __name__ == '__main__':
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['mentionee'] = df['mentionee'].replace('', handle)
-    df.to_csv('mentiondata/%s.csv' % handle.encode("utf-8"), index = False)
+    df.to_csv('mentiondata/%s.csv' % handle, index = False, encoding =  "utf-8")
