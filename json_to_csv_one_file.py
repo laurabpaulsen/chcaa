@@ -124,4 +124,5 @@ if __name__ == '__main__':
         col:np.repeat(x[col].values, x[lst_col].str.len())
         for col in x.columns.difference([lst_col])
     }).assign(**{lst_col:np.concatenate(x[lst_col].values)})[x.columns.tolist()]
+    df['tweetID']= df['tweetID'].astype('int')
     df.to_csv('mentiondata/%s.csv' % handle, index = False, encoding =  "utf-8")
