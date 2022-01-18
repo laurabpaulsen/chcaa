@@ -18,7 +18,8 @@ import io
 
 
 media_list = ["ouzhounews", "shen_shiwei", "CGTNOfficial", "XHNews", "ChinaDaily", "chenweihua", "CNS1952", "PDChina", "PDChinese", "globaltimesnews", "HuXijin_GT", "XinWen_Ch", "QiushiJournal"]
-diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','CGTNOfficial','chenweihua','ChinaAmbUN','chinacgedi', 'ChinaConsulate','ChinaDaily', 'ChinaEmbassyUSA','ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'CNS1952', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','globaltimesnews','HuXijin_GT','MFA_China','ouzhounews','PDChina','PDChinese','QiushiJournal','shen_shiwei', 'SpokespersonCHN', 'spokespersonHZM','XHNews', 'XinWen_Ch','zlj517', 'AmbCina']
+
+diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','ChinaAmbUN','chinacgedi', 'ChinaConsulate', 'ChinaEmbassyUSA','ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','MFA_China','SpokespersonCHN', 'spokespersonHZM','zlj517', 'AmbCina']
 
 def get_mentionee(mention_info):
     ''' Extracts mention info from tweets
