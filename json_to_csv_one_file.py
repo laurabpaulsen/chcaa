@@ -21,16 +21,7 @@ media_list = ["ouzhounews", "shen_shiwei", "CGTNOfficial", "XHNews", "ChinaDaily
 
 diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','ChinaAmbUN','chinacgedi', 'ChinaConsulate', 'ChinaEmbassyUSA','ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','MFA_China','SpokespersonCHN', 'spokespersonHZM','zlj517', 'AmbCina']
 
-def get_mentionee(mention_info):
-    ''' Extracts mention info from tweets
-    Args: 
-        Mention info from tweet object (list of dicts or 0)
-    Returns:
-        mentions if they are included in the diplomat list
-    '''
-    if not mention_info:
-        return ''
-    return ",".join(info['username'] for info in mention_info if info['username'] in handle)
+
 
 
 def get_category(string, media_list, diplomat_list):
