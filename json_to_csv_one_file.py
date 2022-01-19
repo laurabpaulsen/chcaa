@@ -64,7 +64,7 @@ def convert_to_df(data):
     dataframe = {
         "tweetID": [row.get('id').encode("utf-8") for row in data],
         "mentioner": [row["includes"]["users"][0]["username"] for row in data],
-        "mentionee": [get_mentionee(row) for row in data],
+        "mentionee": [handle for row in data],
         "text": [[row['text'] for row in row.get('includes')['tweets']][0] if check(row) else row["text"].encode("utf-8") for row in data],
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data]
         }
@@ -92,7 +92,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('-f','--filepath', required=True, help='path to dir with json')
     args = vars(ap.parse_args())
-    handle = list(args['filepath'].split('mention_')[-1].split('_2007-01')[0])
+    handle = args['filepath'].split('mention_')[-1].split('_2007-01')[0]
 
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
