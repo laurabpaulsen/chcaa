@@ -80,7 +80,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('-f','--filepath', required=True, help='path to dir with json')
     args = vars(ap.parse_args())
-    handle = args['filepath'].split('mention_')[-1].split('_2007-01')[0]
+    handle = 'AmbCina'
 
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
