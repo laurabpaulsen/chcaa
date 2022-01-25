@@ -70,6 +70,7 @@ def load_data(data_path):
 
     with open(data_path, 'r') as f:
         data = ndjson.load(f)
+        data = data[0:400]
     
     return convert_to_df(data)
 
