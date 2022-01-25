@@ -89,5 +89,5 @@ if __name__ == '__main__':
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df["category_mentionee"] = df["mentionee"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['mentionee'] = df['mentionee'].replace('', handle)
-    df['tweetID']= df['tweetID'].astype('int')
+    df['tweetID']= df['tweetID'].astype('str')
     df.to_csv('mentiondata/%s.csv' % handle, index = False, encoding =  "utf-8")
