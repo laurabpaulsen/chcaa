@@ -70,7 +70,6 @@ def load_data(data_path):
 
     with open(data_path, 'r') as f:
         data = ndjson.load(f)
-        data = data[0:400]
     
     return convert_to_df(data)
 
@@ -80,7 +79,7 @@ if __name__ == '__main__':
     ap = argparse.ArgumentParser()
     ap.add_argument('-f','--filepath', required=True, help='path to dir with json')
     args = vars(ap.parse_args())
-    handle = 'AmbCina'
+    handle = args['filepath'].split('mention_')[-1].split('_2007-01')[0]
 
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
