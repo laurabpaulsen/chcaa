@@ -57,6 +57,7 @@ def convert_to_df(data):
         "text": [[row['text'] for row in row.get('includes')['tweets']][0] if check(row) else row["text"].encode("utf-8") for row in data],
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data],
         "created_at": [row["created_at"] for row in data],
+        "lang": [row["lang"] for row in data]
         }
     return pd.DataFrame(dataframe)
 
