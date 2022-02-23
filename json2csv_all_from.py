@@ -99,4 +99,4 @@ if __name__ == '__main__':
     df = df[df['created_at'] > "2019-01-01"]
     df["category"] = df["username"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['tweetID']= df['tweetID'].astype('str')
-    df.to_csv('all_from/updated.csv' % handle, index = False, encoding =  "utf-8")
+    df.to_csv('all_from/updated.csv', index = False, encoding =  "utf-8")
