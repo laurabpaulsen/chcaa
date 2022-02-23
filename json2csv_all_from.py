@@ -110,7 +110,7 @@ if __name__ == '__main__':
     args = vars(ap.parse_args())
 
     df = load_data(args['filepath'])
-    df = subset_dates(df, filter_dates)
+    df = subset_dates(df)
     df["category"] = df["username"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['tweetID']= df['tweetID'].astype('str')
     df.to_csv('all_from/updated.csv', index = False, encoding =  "utf-8")
