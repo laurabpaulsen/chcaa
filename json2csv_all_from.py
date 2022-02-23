@@ -50,7 +50,7 @@ def convert_to_df(data):
         pd.DataFrame: Dataframe containing the necessary information.
     """    
     dataframe = {
-        "username": ["@"+row["includes"]["users"][0]["username"] for row in data],
+        "username": [row["includes"]["users"][0]["username"] for row in data],
         "author_id": [row["author_id"] for row in data],
         "conversation_id": [row["conversation_id"] for row in data],
         "text": [[row['text'] for row in row.get('includes')['tweets']][0].replace('\r','') if check(row) else row["text"].encode("utf-8").replace('\r','') for row in data],
@@ -98,6 +98,6 @@ if __name__ == '__main__':
 
     df = load_data(args['filepath'])
     df = df[df['created_at'] > "2019-01-01"]
-    df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
+    df["category"] = df["username"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['tweetID']= df['tweetID'].astype('str')
     df.to_csv('all_from/updated.csv' % handle, index = False, encoding =  "utf-8")
