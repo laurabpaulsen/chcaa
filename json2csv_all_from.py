@@ -51,8 +51,7 @@ def convert_to_df(data):
     """    
     dataframe = {
         "username": [row["includes"]["users"][0]["username"] for row in data],
-        "author_id": [row["author_id"] for row in data],
-        "conversation_id": [row["conversation_id"] for row in data],
+        "tweetID": [row.get('id').encode("utf-8") for row in data],
         "text": [[row['text'] for row in row.get('includes')['tweets']][0].replace('\r','') if check(row) else row["text"].encode("utf-8").replace('\r','') for row in data],
         "lang": [row["lang"] for row in data],
         "created_at": [row["created_at"] for row in data],
