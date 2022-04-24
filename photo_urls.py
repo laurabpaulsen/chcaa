@@ -89,7 +89,7 @@ def geturl(photo_info):
     '''
     if not photo_info:
         return ''
-    return ",".join(info['url'] for info in photo_info if info['type'] == 'photo')
+    return ",".join(info['expanded_url'] for info in photo_info if info['type'] == 'photo')
 
 def geturl_video(video_info):
     ''' Extracts urls from tweets
