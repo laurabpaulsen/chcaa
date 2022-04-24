@@ -100,7 +100,7 @@ def geturl_video(video_info):
     '''
     if not video_info:
         return ''
-    return ",".join(info['url'] for info in video_info if info['type'] == 'video')
+    return ",".join(info['expanded_url'] for info in video_info if info['type'] == 'video')
 
 def convert_to_df(data):
     """Converts a ndjson-file to a pd.DataFrame
