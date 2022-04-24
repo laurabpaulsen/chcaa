@@ -127,8 +127,9 @@ def convert_to_df(data):
         "photo": [countphoto(row['includes'].get("media", 0)) for row in data],
         "url": [geturl(row['includes'].get("media", 0)) for row in data],
         "video": [countvideo(row['includes'].get("media", 0)) for row in data],
-        "video_url": [geturl_video(row['includes'].get("media", 0)) for row in data]
+        "video_url": [geturl_video(row['extended_entities'].get("media", 0)) for row in data]
     }
+    
 
     return pd.DataFrame(dataframe)
 
