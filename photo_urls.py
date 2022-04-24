@@ -1,6 +1,6 @@
 """
 usage:
-    python chcaa/json2csv_all_from.py --filepath /data/china-mette-thuno/twitter/
+    python chcaa/photo_urls.py --filepath /data/china-mette-thuno/twitter/
 """
 
 # imports 
