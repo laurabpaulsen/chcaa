@@ -89,7 +89,7 @@ def geturl(photo_info):
     '''
     if not photo_info:
         return ''
-    return ",".join(info['expanded_url'] for info in photo_info if info['type'] == 'photo')
+    return ",".join(info['url'] for info in photo_info if info['type'] == 'photo')
 
 def geturl_video(video_info):
     ''' Extracts urls from tweets
@@ -100,7 +100,7 @@ def geturl_video(video_info):
     '''
     if not video_info:
         return ''
-    return ",".join(info['url'] for info in video_info if info['type'] == 'video')
+    return ",".join(info['expanded_url'] for info in video_info if info['type'] == 'video')
 
 def convert_to_df(data):
     """Converts a ndjson-file to a pd.DataFrame
@@ -125,7 +125,8 @@ def convert_to_df(data):
         "listed_count": [row["includes"]["users"][0]["public_metrics"]["listed_count"] for row in data],
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data],
         "photo": [countphoto(row['includes'].get("media", 0)) for row in data],
-        "url": [geturl(row['includes'].get("media", 0)) for row in data],
+        "
+        ": [geturl(row['includes'].get("media", 0)) for row in data],
         "video": [countvideo(row['includes'].get("media", 0)) for row in data],
         "video_url": [geturl_video(row['includes'].get("media", 0)) for row in data]
     }
