@@ -126,8 +126,8 @@ def convert_to_df(data):
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data],
         "photo": [countphoto(row['includes'].get("media", 0)) for row in data],
         "url": [geturl(row['includes'].get("media", 0)) for row in data],
-        "video": [countvideo(row['includes'].get("media", 0)) for row in data],
-        "video_url": [geturl_video(row['includes'].get("media", 0)) for row in data]
+        "video": [countvideo(row['includes'].get("media", 0)) for row in data]#,
+        #"video_url": [geturl_video(row['includes'].get("media", 0)) for row in data]
     }
     
 
