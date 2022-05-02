@@ -1,6 +1,6 @@
 """
 usage:
-    python src/json2csv.py --filepath data/example/
+    python src/json2csv.py --filepath data/example.ndjson
 """
 
 # imports 
