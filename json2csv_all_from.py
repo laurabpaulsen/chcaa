@@ -93,7 +93,7 @@ def load_data(data_path):
     """    
     file_list = os.listdir(data_path)
 
-    file_list = [file for file in file_list if re.match("from", file)]
+    file_list = [file for file in file_list if re.match("from.*01_2022-04-30", file)]
 
     dataframes = []
 
