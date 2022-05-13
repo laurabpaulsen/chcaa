@@ -17,9 +17,11 @@ import io
 
 
 
-media_list = ["shen_shiwei", "CGTNOfficial", "XHNews", "ChinaDaily", "chenweihua", "CNS1952", "PDChina", "PDChinese", "globaltimesnews", "HuXijin_GT", "XinWen_Ch", "QiushiJournal"]
+media_list = ['Echinanews', "shen_shiwei", "CGTNOfficial", "XHNews", "ChinaDaily", "chenweihua", "CNS1952", "PDChina", "PDChinese", "globaltimesnews", "HuXijin_GT", "XinWen_Ch", "QiushiJournal"]
 
-diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','ChinaAmbUN','chinacgedi', 'ChinaConsulate', 'ChinaEmbassyUSA','ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','MFA_China','SpokespersonCHN', 'SpokespersonHZM','zlj517', 'AmbCina', 'ChinaConSydney', 'ChinaEmbOttawa', 'ChinaCGCalgary', 'ChinaCGMTL', 'ChinainVan', 'ChnEmbassy_jp', 'ChnConsul_osaka']
+diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','ChinaAmbUN','chinacgedi', 'ChinaConsulate', 'ChinaEmbassyUSA','ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','MFA_China','SpokespersonCHN', 'SpokespersonHZM','zlj517', 'AmbCina', 'ChinaConSydney', 'ChinaEmbOttawa', 'ChinaCGCalgary', 'ChinaCGMTL', 'ChinainVan', 'ChnEmbassy_jp', 'ChnConsul_osaka', 
+                 'AmbKongXuanyou', 'AmbLiJunhua','AmbQinGang', 'AmbZhengZeguang', 'Cao_Li_CHN', 'CGHuangPingNY', 'CGMeifangZhang', 'CGZhangPingLA', 'ChinaCG_HH', 'ChinaCG_Muc', 'ChinaCG_NYC', 'ChinaEmbEsp', 'China_Ukraine_', 'China_Ukraine', 'ChineseCon_Mel', 'ChineseEmbinRus', 'ChnConsulateFuk', 'ChnConsulateNag', 'ChnConsulateNgo', 'ChnConsulateNgt', 'ConsulChinaBcn', 'ConsulateSan', 'DIOC_MFA_China', 
+                 'FuCong17', 'FukLyuGuijun', 'Li_Yang_China', 'LongDingbin', 'SpoxCHNinUS', 'WangLutongMFA', 'WuPeng_MFAChina', 'XIEYongjun_CHN', 'xuejianosaka', 'zhaobaogang', 'Zhou_Li_CHN', 'zhu_jingyang']
 
 
 def subset_dates(df, filter_dates="True"):
