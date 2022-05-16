@@ -24,21 +24,6 @@ diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'Am
                  'FuCong17', 'FukLyuGuijun', 'Li_Yang_China', 'LongDingbin', 'SpoxCHNinUS', 'WangLutongMFA', 'WuPeng_MFAChina', 'XIEYongjun_CHN', 'xuejianosaka', 'zhaobaogang', 'Zhou_Li_CHN', 'zhu_jingyang']
 
 
-def subset_dates(df, filter_dates="True"):
-    '''
-    df: <pd.dataframe>
-    subset_dates: <bool> defaults to true 
-    ''' 
-
-    df["created_at"] = df["created_at"].astype("datetime64[ns]") 
-    df["created_at"] = pd.to_datetime(df["created_at"]).dt.date
-
-    if filter_dates == "True": 
-        df = df[
-            (df["created_at"] >= datetime.date(2019,11,1)) &
-            (df["created_at"] <= datetime.date(2021,2,28))]
-
-    return df
 
 def get_category(string, media_list, diplomat_list):
     if string in media_list:
@@ -112,7 +97,6 @@ if __name__ == '__main__':
     args = vars(ap.parse_args())
 
     df = load_data(args['filepath'])
-    df = subset_dates(df)
     df["category"] = df["username"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['tweetID']= df['tweetID'].astype('str')
     df.to_csv('all_from/updated.csv', index = False, encoding =  "utf-8")
