@@ -16,195 +16,249 @@ python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/
 echo 7
 python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_AmbKongXuanyou_2019-11-01_2022-04-30.ndjson
 echo 8
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_AmbLiJunhua_2019-11-01_2022-04-30.ndjsonmention_AmbLiuXiaoMing_2007-01-01_2021-02-28.ndjsonmention_AmbLiuXiaoMing_2021-03-01_2022-04-30.ndjsonmention_AmbQinGang_2019-11-01_2022-04-30.ndjsonmention_AmbZhengZeguang_2019-11-01_2022-04-30.ndjsonmention_Cao_Li_CHN_2019-11-01_2022-04-30.ndjsonmention_CCGBelfast_2007-01-01_2021-02-28.ndjsonmention_CCGBelfast_2021-03-01_2022-04-30.ndjsonmention_CGHuangPingNY_2019-11-01_2022-04-30.ndjsonmention_CGMeifangZhang_2019-11-01_2022-04-30.ndjsonmention_CGTNOfficial_2007-01-01_2021-02-28.ndjsonmention_CGTNOfficial_2021-03-01_2022-04-30.ndjsonmention_CGZhangPingLA_2019-11-01_2022-04-30.ndjsonmention_chenweihua_2007-01-01_2021-02-28.ndjsonmention_chenweihua_2021-03-01_2022-04-30.ndjsonmention_ChinaAmbUN_2007-01-01_2021-02-28.ndjsonmention_ChinaAmbUN_2021-03-01_2022-04-30.ndjsonmention_ChinaCGCalgary_2011-11-01_2021-02-28.ndjsonmention_ChinaCGCalgary_2021-03-01_2022-04-30.ndjsonmention_chinacgedi_2007-01-01_2021-02-28.ndjsonmention_chinacgedi_2021-03-01_2022-04-30.ndjsonmention_ChinaCG_Ffm_2019-11-01_2022-04-30.ndjsonmention_ChinaCG_HH_2019-11-01_2022-04-30.ndjsonmention_ChinaCGMTL_2011-11-01_2021-02-28.ndjsonmention_ChinaCGMTL_2021-03-01_2022-04-30.ndjsonmention_ChinaCG_Muc_2019-11-01_2022-04-30.ndjsonmention_ChinaCG_NYC_2019-11-01_2022-04-30.ndjsonmention_ChinaConsulate_2007-01-01_2021-02-28.ndjsonmention_ChinaConsulate_2021-03-01_2022-04-30.ndjsonmention_ChinaConSydney_2011-11-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_AmbLiJunhua_2019-11-01_2022-04-30.ndjson
 echo 9
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaConSydney_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_AmbLiuXiaoMing_2007-01-01_2021-02-28.ndjson
 echo 10
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaDaily_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_AmbLiuXiaoMing_2021-03-01_2022-04-30.ndjson
 echo 11
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaDaily_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_AmbQinGang_2019-11-01_2022-04-30.ndjson
 echo 12
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbassyUSA_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_AmbZhengZeguang_2019-11-01_2022-04-30.ndjson
 echo 13
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbassyUSA_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Cao_Li_CHN_2019-11-01_2022-04-30.ndjson
 echo 14
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbEsp_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CCGBelfast_2007-01-01_2021-02-28.ndjson
 echo 15
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbGermany_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CCGBelfast_2021-03-01_2022-04-30.ndjson
 echo 16
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbGermany_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CGHuangPingNY_2019-11-01_2022-04-30.ndjson
 echo 17
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbOttawa_2011-11-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CGMeifangZhang_2019-11-01_2022-04-30.ndjson
 echo 18
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbOttawa_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CGTNOfficial_2007-01-01_2021-02-28.ndjson
 echo 19
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEUMission_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CGTNOfficial_2021-03-01_2022-04-30.ndjson
 echo 20
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEUMission_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CGZhangPingLA_2019-11-01_2022-04-30.ndjson
 echo 21
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaInDenmark_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_chenweihua_2007-01-01_2021-02-28.ndjson
 echo 22
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaInDenmark_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_chenweihua_2021-03-01_2022-04-30.ndjson
 echo 23
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinainVan_2011-11-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaAmbUN_2007-01-01_2021-02-28.ndjson
 echo 24
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinainVan_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaAmbUN_2021-03-01_2022-04-30.ndjson
 echo 25
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_China_Lyon_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaCGCalgary_2011-11-01_2021-02-28.ndjson
 echo 26
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_China_Lyon_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaCGCalgary_2021-03-01_2022-04-30.ndjson
 echo 27
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Chinamission2un_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_chinacgedi_2007-01-01_2021-02-28.ndjson
 echo 28
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Chinamission2un_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_chinacgedi_2021-03-01_2022-04-30.ndjson
 echo 29
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaMissionGva_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaCG_Ffm_2019-11-01_2022-04-30.ndjson
 echo 30
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaMissionGva_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaCG_HH_2019-11-01_2022-04-30.ndjson
 echo 31
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaMissionVie_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaCGMTL_2011-11-01_2021-02-28.ndjson
 echo 32
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaMissionVie_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaCGMTL_2021-03-01_2022-04-30.ndjson
 echo 33
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_chinascio_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaCG_Muc_2019-11-01_2022-04-30.ndjson
 echo 34
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_chinascio_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaCG_NYC_2019-11-01_2022-04-30.ndjson
 echo 35
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_China_Ukraine__2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaConsulate_2007-01-01_2021-02-28.ndjsonmention_ChinaConsulate_2021-03-01_2022-04-30.ndjsonmention_ChinaConSydney_2011-11-01_2021-02-28.ndjson
 echo 36
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseCon_Mel_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaConSydney_2021-03-01_2022-04-30.ndjson
 echo 37
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinRus_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaDaily_2007-01-01_2021-02-28.ndjson
 echo 38
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinUK_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaDaily_2021-03-01_2022-04-30.ndjson
 echo 39
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinUK_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbassyUSA_2007-01-01_2021-02-28.ndjson
 echo 40
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinUS_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbassyUSA_2021-03-01_2022-04-30.ndjson
 echo 41
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinUS_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbEsp_2019-11-01_2022-04-30.ndjson
 echo 42
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsulateFuk_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbGermany_2007-01-01_2021-02-28.ndjson
 echo 43
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsulateNag_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbGermany_2021-03-01_2022-04-30.ndjson
 echo 44
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsulateNgo_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbOttawa_2011-11-01_2021-02-28.ndjson
 echo 45
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsulateNgt_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEmbOttawa_2021-03-01_2022-04-30.ndjson
 echo 46
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsul_osaka_2011-11-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEUMission_2007-01-01_2021-02-28.ndjson
 echo 47
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsul_osaka_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaEUMission_2021-03-01_2022-04-30.ndjson
 echo 48
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnEmbassy_jp_2011-11-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaInDenmark_2007-01-01_2021-02-28.ndjson
 echo 49
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnEmbassy_jp_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaInDenmark_2021-03-01_2022-04-30.ndjson
 echo 50
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnMission_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinainVan_2011-11-01_2021-02-28.ndjson
 echo 51
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnMission_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinainVan_2021-03-01_2022-04-30.ndjson
 echo 52
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CHN_UN_NY_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_China_Lyon_2007-01-01_2021-02-28.ndjson
 echo 53
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CHN_UN_NY_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_China_Lyon_2021-03-01_2022-04-30.ndjson
 echo 54
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CNS1952_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Chinamission2un_2007-01-01_2021-02-28.ndjson
 echo 55
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CNS1952_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Chinamission2un_2021-03-01_2022-04-30.ndjson
 echo 56
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_consulat_de_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaMissionGva_2007-01-01_2021-02-28.ndjson
 echo 57
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_consulat_de_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaMissionGva_2021-03-01_2022-04-30.ndjson
 echo 58
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ConsulateSan_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaMissionVie_2007-01-01_2021-02-28.ndjson
 echo 59
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ConsulChinaBcn_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChinaMissionVie_2021-03-01_2022-04-30.ndjson
 echo 60
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_DIOC_MFA_China_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_chinascio_2007-01-01_2021-02-28.ndjson
 echo 61
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Echinanews_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_chinascio_2021-03-01_2022-04-30.ndjson
 echo 62
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_EUMissionChina_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_China_Ukraine__2019-11-01_2022-04-30.ndjson
 echo 63
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_EUMissionChina_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseCon_Mel_2019-11-01_2022-04-30.ndjson
 echo 64
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_FuCong17_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinRus_2019-11-01_2022-04-30.ndjson
 echo 65
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_FukLyuGuijun_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinUK_2007-01-01_2021-02-28.ndjson
 echo 66
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_GeneralkonsulDu_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinUK_2021-03-01_2022-04-30.ndjson
 echo 67
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_GeneralkonsulDu_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinUS_2007-01-01_2021-02-28.ndjson
 echo 68
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_globaltimesnews_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChineseEmbinUS_2021-03-01_2022-04-30.ndjson
 echo 69
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_globaltimesnews_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsulateFuk_2019-11-01_2022-04-30.ndjson
 echo 70
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_HuXijin_GT_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsulateNag_2019-11-01_2022-04-30.ndjson
 echo 71
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_HuXijin_GT_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsulateNgo_2019-11-01_2022-04-30.ndjson
 echo 72
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Li_Yang_China_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsulateNgt_2019-11-01_2022-04-30.ndjson
 echo 73
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_LongDingbin_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsul_osaka_2011-11-01_2021-02-28.ndjson
 echo 74
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_MFA_China_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnConsul_osaka_2021-03-01_2022-04-30.ndjson
 echo 75
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_MFA_China_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnEmbassy_jp_2011-11-01_2021-02-28.ndjson
 echo 76
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ouzhounews_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnEmbassy_jp_2021-03-01_2022-04-30.ndjson
 echo 77
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ouzhounews_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnMission_2007-01-01_2021-02-28.ndjson
 echo 78
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_PDChina_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ChnMission_2021-03-01_2022-04-30.ndjson
 echo 79
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_PDChina_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CHN_UN_NY_2007-01-01_2021-02-28.ndjson
 echo 80
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_PDChinese_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CHN_UN_NY_2021-03-01_2022-04-30.ndjson
 echo 81
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_PDChinese_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CNS1952_2007-01-01_2021-02-28.ndjson
 echo 82
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_QiushiJournal_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_CNS1952_2021-03-01_2022-04-30.ndjson
 echo 83
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_QiushiJournal_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_consulat_de_2007-01-01_2021-02-28.ndjson
 echo 84
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_shen_shiwei_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_consulat_de_2021-03-01_2022-04-30.ndjson
 echo 85
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_shen_shiwei_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ConsulateSan_2019-11-01_2022-04-30.ndjson
 echo 86
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_SpokespersonCHN_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ConsulChinaBcn_2019-11-01_2022-04-30.ndjson
 echo 87
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_SpokespersonCHN_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_DIOC_MFA_China_2019-11-01_2022-04-30.ndjson
 echo 88
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_spokespersonHZM_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Echinanews_2019-11-01_2022-04-30.ndjson
 echo 89
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_spokespersonHZM_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_EUMissionChina_2007-01-01_2021-02-28.ndjson
 echo 90
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_SpoxCHNinUS_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_EUMissionChina_2021-03-01_2022-04-30.ndjson
 echo 91
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_WangLutongMFA_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_FuCong17_2019-11-01_2022-04-30.ndjson
 echo 92
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_WuPeng_MFAChina_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_FukLyuGuijun_2019-11-01_2022-04-30.ndjson
 echo 93
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XHNews_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_GeneralkonsulDu_2007-01-01_2021-02-28.ndjson
 echo 94
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XHNews_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_GeneralkonsulDu_2021-03-01_2022-04-30.ndjson
 echo 95
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XIEYongjun_CHN_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_globaltimesnews_2007-01-01_2021-02-28.ndjson
 echo 96
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XinWen_Ch_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_globaltimesnews_2021-03-01_2022-04-30.ndjson
 echo 97
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XinWen_Ch_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_HuXijin_GT_2007-01-01_2021-02-28.ndjson
 echo 98
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_xuejianosaka_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_HuXijin_GT_2021-03-01_2022-04-30.ndjson
 echo 99
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_zhaobaogang2011_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Li_Yang_China_2019-11-01_2022-04-30.ndjson
 echo 100
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Zhou_Li_CHN_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_LongDingbin_2019-11-01_2022-04-30.ndjson
 echo 101
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_zhu_jingyang_2019-11-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_MFA_China_2007-01-01_2021-02-28.ndjson
 echo 102
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_zlj517_2007-01-01_2021-02-28.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_MFA_China_2021-03-01_2022-04-30.ndjson
 echo 103
-python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_zlj517_2021-03-01_2022-04-30.ndjson
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ouzhounews_2007-01-01_2021-02-28.ndjson
 echo 104
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_ouzhounews_2021-03-01_2022-04-30.ndjson
+echo 105
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_PDChina_2007-01-01_2021-02-28.ndjson
+echo 106
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_PDChina_2021-03-01_2022-04-30.ndjson
+echo 107
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_PDChinese_2007-01-01_2021-02-28.ndjson
+echo 108
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_PDChinese_2021-03-01_2022-04-30.ndjson
+echo 109
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_QiushiJournal_2007-01-01_2021-02-28.ndjson
+echo 110
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_QiushiJournal_2021-03-01_2022-04-30.ndjson
+echo 111
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_shen_shiwei_2007-01-01_2021-02-28.ndjson
+echo 112
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_shen_shiwei_2021-03-01_2022-04-30.ndjson
+echo 113
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_SpokespersonCHN_2007-01-01_2021-02-28.ndjson
+echo 114
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_SpokespersonCHN_2021-03-01_2022-04-30.ndjson
+echo 115
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_spokespersonHZM_2007-01-01_2021-02-28.ndjson
+echo 116
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_spokespersonHZM_2021-03-01_2022-04-30.ndjson
+echo 117
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_SpoxCHNinUS_2019-11-01_2022-04-30.ndjson
+echo 118
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_WangLutongMFA_2019-11-01_2022-04-30.ndjson
+echo 119
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_WuPeng_MFAChina_2019-11-01_2022-04-30.ndjson
+echo 120
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XHNews_2007-01-01_2021-02-28.ndjson
+echo 121
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XHNews_2021-03-01_2022-04-30.ndjson
+echo 122
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XIEYongjun_CHN_2019-11-01_2022-04-30.ndjson
+echo 123
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XinWen_Ch_2007-01-01_2021-02-28.ndjson
+echo 124
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_XinWen_Ch_2021-03-01_2022-04-30.ndjson
+echo 125
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_xuejianosaka_2019-11-01_2022-04-30.ndjson
+echo 126
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_zhaobaogang2011_2019-11-01_2022-04-30.ndjson
+echo 127
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_Zhou_Li_CHN_2019-11-01_2022-04-30.ndjson
+echo 128
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_zhu_jingyang_2019-11-01_2022-04-30.ndjson
+echo 129
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_zlj517_2007-01-01_2021-02-28.ndjson
+echo 130
+python chcaa/json_to_csv_one_file.py --filepath /data/china-mette-thuno/twitter/mention_zlj517_2021-03-01_2022-04-30.ndjson
+echo 131
