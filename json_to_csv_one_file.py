@@ -89,10 +89,11 @@ if __name__ == '__main__':
     ap.add_argument('-f','--filepath', required=True, help='path to dir with json')
     args = vars(ap.parse_args())
     handle = args['filepath'].split('mention_')[-1].split('_20')[0]
+    filename = args['filepath'].split('mention_')[-1].split('.nd')[0]
 
     df = load_data(args['filepath'])
     df["category"] = df["mentioner"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df["category_mentionee"] = df["mentionee"].apply(lambda x:get_category(x, media_list, diplomat_list))
     df['mentionee'] = df['mentionee'].replace('', handle)
     df['tweetID']= df['tweetID'].astype('str')
-    df.to_csv('mentiondata/%s.csv' % handle, index = False, encoding =  "utf-8")
+    df.to_csv('mentiondata/%s.csv' % filename, index = False, encoding =  "utf-8")
