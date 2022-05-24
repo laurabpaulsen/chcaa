@@ -17,9 +17,11 @@ import io
 
 
 
-media_list = ["shen_shiwei", "CGTNOfficial", "XHNews", "ChinaDaily", "chenweihua", "CNS1952", "PDChina", "PDChinese", "globaltimesnews", "HuXijin_GT", "XinWen_Ch", "QiushiJournal"]
+media_list = ['Echinanews', "shen_shiwei", "CGTNOfficial", "XHNews", "ChinaDaily", "chenweihua", "CNS1952", "PDChina", "PDChinese", "globaltimesnews", "HuXijin_GT", "XinWen_Ch", "QiushiJournal"]
 
-diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','ChinaAmbUN','chinacgedi', 'ChinaConsulate', 'ChinaEmbassyUSA','ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','MFA_China','SpokespersonCHN', 'spokespersonHZM', 'SpokespersonHZM','zlj517', 'AmbCina', 'ChinaConSydney', 'ChnEmbassy_jp', 'ChinaEmbOttawa', 'ChinaCGCalgary', 'ChinaCGMTL', 'ChnConsul_osaka', 'ChinainVan']
+diplomat_list = ['AmbassadeChine', 'Amb_ChenXu', 'ambcina', 'AmbCuiTiankai', 'AmbLiuXiaoMing','CCGBelfast','ChinaAmbUN','chinacgedi', 'ChinaConsulate', 'ChinaEmbassyUSA','ChinaEmbGermany','ChinaEUMission','ChinaInDenmark','China_Lyon','Chinamission2un','ChinaMissionGva','ChinaMissionVie','chinascio', 'ChineseEmbinUK', 'ChineseEmbinUS', 'ChnMission','CHN_UN_NY', 'consulat_de', 'EUMissionChina','GeneralkonsulDu','MFA_China','SpokespersonCHN', 'SpokespersonHZM','zlj517', 'AmbCina', 'ChinaConSydney', 'ChinaEmbOttawa', 'ChinaCGCalgary', 'ChinaCGMTL', 'ChinainVan', 'ChnEmbassy_jp', 'ChnConsul_osaka', 
+                 'AmbKongXuanyou', 'AmbLiJunhua','AmbQinGang', 'AmbZhengZeguang', 'Cao_Li_CHN', 'CGHuangPingNY', 'CGMeifangZhang', 'CGZhangPingLA', 'ChinaCG_HH', 'ChinaCG_Muc', 'ChinaCG_NYC', 'ChinaEmbEsp', 'China_Ukraine_', 'China_Ukraine', 'ChineseCon_Mel', 'ChineseEmbinRus', 'ChnConsulateFuk', 'ChnConsulateNag', 'ChnConsulateNgo', 'ChnConsulateNgt', 'ConsulChinaBcn', 'ConsulateSan', 'DIOC_MFA_China', 
+                 'FuCong17', 'FukLyuGuijun', 'Li_Yang_China', 'LongDingbin', 'SpoxCHNinUS', 'WangLutongMFA', 'WuPeng_MFAChina', 'XIEYongjun_CHN', 'xuejianosaka', 'zhaobaogang2011', 'Zhou_Li_CHN', 'zhu_jingyang', 'ChinaCG_Ffm']
 
 
 
@@ -57,7 +59,12 @@ def convert_to_df(data):
         "text": [[row['text'] for row in row.get('includes')['tweets']][0].replace('\r','') if check(row) else row["text"].encode("utf-8").replace('\r','') for row in data],
         "retweet": [row["referenced_tweets"][0]["type"] if row.get("referenced_tweets") else "original" for row in data],
         "created_at": [row["created_at"] for row in data],
-        "lang": [row["lang"] for row in data]
+        "lang": [row["lang"] for row in data],
+        "followers_mentioner": [row["includes"]["users"][0]["public_metrics"]["followers_count"] for row in data],
+        "following_mentioner": [row["includes"]["users"][0]["public_metrics"]["following_count"] for row in data],
+        "verified_mentioner": [row["includes"]["users"][0]["verified"] for row in data],
+        "profileimg_mentioner": [row["includes"]["users"][0]["profile_image_url"] for row in data],
+        "created_mentioner": [row["includes"]["users"][0]["created_at"] for row in data]
         }
     return pd.DataFrame(dataframe)
 
