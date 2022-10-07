@@ -19,7 +19,8 @@ def convert_to_df(data):
         "username": [row["includes"]["users"][0]["username"] for row in data],
         "tweetID": [row.get('id').encode("utf-8") for row in data],
         "number_of_photos": [countphoto(row['includes'].get("media", 0)) for row in data],
-        "url_photos": [geturl(row['includes'].get("media", 0)) for row in data]
+        "url_photos": [geturl(row['includes'].get("media", 0)) for row in data],
+        "retweet_count": [row["public_metrics"]["retweet_count"] for row in data]
 
     }
 
